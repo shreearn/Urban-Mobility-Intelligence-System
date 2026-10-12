@@ -1,10 +1,12 @@
 # Urban-Mobility-Intelligence-System
 
 Turning 34.5 million NYC taxi trips into ETA predictions you can trust, demand forecasts you can plan around, and routes you can benchmark, all in one interactive dashboard.
-[[https://img.shields.io/badge/Python-3.10-blue]] [https://img.shields.io/badge/LightGBM-ETA%20Model-success]
-[https://img.shields.io/badge/PySpark-Demand%20Forecasting-orange] [https://img.shields.io/badge/Streamlit-Dashboard-ff4b4b]
+![Python 3.10](https://img.shields.io/badge/Python-3.10-blue)
+![LightGBM ETA Model](https://img.shields.io/badge/LightGBM-ETA%20Model-success)
+![PySpark Demand Forecasting](https://img.shields.io/badge/PySpark-Demand%20Forecasting-orange)
+![Streamlit Dashboard](https://img.shields.io/badge/Streamlit-Dashboard-ff4b4b)
 
-The Problem
+# The Problem
 
 Taxi fleets generate massive amounts of trip data, yet dispatch decisions are still mostly reactive. Riders get ETAs with no sense of how reliable they are, and drivers are sent to demand after it appears. This project asks three operational questions:
 
