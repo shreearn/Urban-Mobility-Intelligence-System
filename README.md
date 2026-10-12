@@ -1,6 +1,7 @@
 # Urban-Mobility-Intelligence-System
 
 Turning 34.5 million NYC taxi trips into ETA predictions you can trust, demand forecasts you can plan around, and routes you can benchmark, all in one interactive dashboard.
+
 ![Python 3.10](https://img.shields.io/badge/Python-3.10-blue)
 ![LightGBM ETA Model](https://img.shields.io/badge/LightGBM-ETA%20Model-success)
 ![PySpark Demand Forecasting](https://img.shields.io/badge/PySpark-Demand%20Forecasting-orange)
@@ -58,12 +59,19 @@ LightGBM leads even when every model is trained on the same 5M sample, which is 
 
 NYC TLC trip records (Jan–Mar 2016, 34.5M trips)
    │
+   
    ├─ Cleaning ............. coordinate outliers, impossible durations/distances (2.6% removed)
+   
    ├─ Feature engineering .. 28 features: temporal, spatial, airport flags, zone clusters,
+   
    │                         congestion memory (zone speed 15/30/60 min earlier), target encoding
+   
    ├─ ETA model ............ LightGBM, temporal split (train Jan–Feb → test Mar)
+   
    ├─ Reliability layer .... rule-based score from distance, airport, rush hour, zone
+   
    ├─ Demand model ......... PySpark GBT on zone-hour aggregates with lag features
+   
    └─ Route simulation ..... OSMnx graph + Dijkstra shortest path vs actual trip distance
 
 
@@ -87,16 +95,27 @@ Path Simulation: Live shortest-path finder on an interactive map, route comparis
 # Repository Structure
 
 ├── app.py                 # Streamlit entry point
+
 ├── data_loader.py         # cached data loading
+
 ├── seg_eda.py             # Section 1: EDA
+
 ├── seg_eta.py             # Section 2: ETA prediction
+
 ├── seg_demand.py          # Section 3: demand prediction
+
 ├── seg_path.py            # Section 4: path simulation
+
 ├── path_engine.py         # OSMnx + Dijkstra routing engine
+
 ├── genai.py               # LLM Q&A panel
+
 ├── styles.py              # theme and shared UI helpers
+
 ├── notebooks/             # cleaning, EDA, ETA modelling, PySpark demand, path simulation
+
 ├── data/                  # sample CSVs (full data not tracked)
+
 └── requirements.txt
 
 
