@@ -1,7 +1,7 @@
 # Urban-Mobility-Intelligence-System
 
 Turning 34.5 million NYC taxi trips into ETA predictions you can trust, demand forecasts you can plan around, and routes you can benchmark, all in one interactive dashboard.
-[https://img.shields.io/badge/Python-3.10-blue] [https://img.shields.io/badge/LightGBM-ETA%20Model-success]
+[[https://img.shields.io/badge/Python-3.10-blue]] [https://img.shields.io/badge/LightGBM-ETA%20Model-success]
 [https://img.shields.io/badge/PySpark-Demand%20Forecasting-orange] [https://img.shields.io/badge/Streamlit-Dashboard-ff4b4b]
 
 The Problem
